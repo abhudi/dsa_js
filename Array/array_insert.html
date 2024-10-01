@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Insert element in array -->
+    <script>
+      //   let data = [13, 30, 40, 50, 1, 0, 39];
+      //   let newEl = 70;
+      //   let position = 4;
+      //   for (let i = data.length - 1; i >= 0; i--) {
+      //     console.log(data[i]);
+      //     if (i >= position) {
+      //       data[i + 1] = data[i];
+      //       if (i == position) {
+      //         data[i] = newEl;
+      //       }
+      //     }
+      //   }
+      //   alert(data);
+
+    //   Own logic
+      function insertEL() {
+        let data = [13, 30, 40, 50, 1, 0, 39];
+        let newEl = document.getElementById("newel").value;
+        let position = document.getElementById("position").value;
+        for (let i = data.length - 1; i >= 0; i--) {
+          console.log(data[i]);
+          if (i >= position) {
+            data[i + 1] = data[i];
+            if (i == position) {
+              data[i] = newEl;
+            }
+          }
+        }
+        alert(data);
+      }
+
+
+    //   prebuild function 
+
+    let items = [20,40.593,459,58,68];
+    items.splice(2,0,2000);
+    alert(items);
+    </script>
+
+    <input type="text" id="position" placeholder="Enter Position" />
+    <input type="text" id="newel" placeholder="Enter new Element" />
+    <button onclick="insertEL()">Button</button>
+  </body>
+</html>
