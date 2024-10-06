@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let data = [30, 5, 39, 5, 37, 29, 59, 3];
+      let item = 3;
+      let index = undefined;
+
+      for (let i = 0; i < data.length; i++) {
+        if (data[i] == item) {
+          index = i;
+          break;
+        }
+      }
+      alert(index);
+
+      //   if data is repeated
+      let data2 = [10, 20, 30, 40, 50, 60, 20];
+      let search2 = 20;
+      let sIndex = [];
+      for (i = 0; i < data2.length; i++) {
+        if (data2[i] == search2) {
+          sIndex.push(i);
+        }
+      }
+      alert(sIndex);
+
+      function searcher() {
+        let data2 = [10, 20, 30, 40, 50, 60, 20];
+        let search2 = document.getElementById("searcher").value;
+        let sIndex = [];
+        for (i = 0; i < data2.length; i++) {
+          if (data2[i] == search2) {
+            sIndex.push(i);
+          }
+          else{
+            alert("Not Found");
+          }
+        }
+        alert(sIndex);
+      }
+    </script>
+
+    <input type="text" name="" id="searcher" />
+    <button onclick="searcher()">Search</button>
+  </body>
+</html>
