@@ -1,0 +1,8 @@
+time complexity: 
+the time complexity is mainly calculated by counting the number of steps to finish the execution
+
+space complexity:
+space complexity is the amount of space required to solve a problem 
+spcae complexity = auxiliary space + input size
+
+big O notation: Use to denote complexity(both)
